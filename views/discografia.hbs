@@ -1,0 +1,62 @@
+<head>
+<link rel="stylesheet" href="stylesheets/styles.css"/>
+</head>
+
+<body 
+    class="bgImg">
+    <div class="menu"
+        align="right">
+        <a href="/"><h3>Página Principal</h3></a>
+    <br>
+    <h1 align="center">En Stock</h1>
+    <br>
+    <h4 align="center">Haga click en botón derecho del mouse sobre la imagen para abrirla en una nueva ventana y tener una mejor imagen del disco</h4>
+    <br>
+    <section  id="products-container" class="products-container" align="center">
+                 
+    {{#each discografia}}
+        <div id="cajamadre"
+            class="imgcaja" 
+            style="width: 200px; border-radius: 6%;" >
+            <h3>{{año}}</h3><h4>{{nombre}}</h4>
+        <img src={{portada}} alt="">
+        <img src={{contenido}} alt="">
+        </div>
+        
+    {{/each}}
+    </section>
+    <div class="menu"
+             align="center">
+    <h2>Seleccione Su Preferencia</h2>
+            <h4>(Pinche en el nombre del disco para acceder al enlace)</h4>
+            <br>
+            <div class="menu">
+            <div><a href="https://www.youtube.com/watch?v=Of8BEaIotB0"
+                target="_blank">
+                    <h3>* 1984 - La Voz De Los 80</h3></a></div>
+            
+            <div><a href="https://www.youtube.com/watch?v=0iV2nbxicik"
+                target="_blank">
+                    <h3>* 1986 - Pateando Piedras</h3></a></div>
+            
+            <div><a href="https://www.youtube.com/watch?v=o1wllVDmG_Q"
+                target="_blank">
+                   <h3>* 1987 - La Cultura De La Basura</h3></a></div>
+
+            <div><a href="https://www.youtube.com/watch?v=B_7quho3GPU"
+                target="_blank">
+                   <h3>* 1990 - Corazones</h3></a></div>
+
+            <div><a href="https://www.youtube.com/watch?v=IVEDZFzaQAc&list=PLbTh-j0WgeXWlGeIDIwm9E5_okMfAO3ty"
+                target="_blank">
+                    <h3>* 1996 - Ni Por La Razón, Ni Por La Fuerza</h3></a></div>
+
+            <div><a href="https://www.youtube.com/watch?v=LyLzpszWivI"
+                target="_blank">
+                   <h3>* 2002 - Estadio Nacional</h3></a></div>
+            <br>
+        <a href="discografia"><h2>Subir</h2></a>
+        </div> 
+        
+</body>
+</html>
